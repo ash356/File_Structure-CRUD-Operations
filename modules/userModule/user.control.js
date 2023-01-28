@@ -1,7 +1,7 @@
 let { users } = require("../../DB/models/userArray");
 // Home Page Method
 const welcome = (request, response, next) => {
-  return response.send("Home Page");
+  return response.json({ "All Users": users });
 };
 // 01- Get All Users Method
 const getAllUsers = (request, response, next) => {
